@@ -8,7 +8,7 @@ L’utilisation des images officielles Confluent Kafka permet de lancer Kafka et
 
 Le fichier docker-compose.yml ci-dessous permet de démarrer un broker Kafka ainsi que Zookeeper :
 
-version: '3'
+""" version: '3'
 services:
 zookeeper:
 image: confluentinc/cp-zookeeper:7.3.0
@@ -31,7 +31,7 @@ KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLA
 KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
 KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
-KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1 """
 
 🔄 Utilisation de Kafka
 🧪 Commandes Kafka (CLI)
@@ -107,6 +107,6 @@ Ce mécanisme permet une visualisation temps réel des événements sans rafraî
 <img src="images/tempreelback.png" alt="analyticsKafka" width="600"/>
 🌐 Consommation côté Frontend
 
-Côté frontend (Angular / React / JavaScript), l’API EventSource est utilisée pour se connecter à l’endpoint SSE /analytics et recevoir automatiquement les mises à jour en temps réel.
+Côté frontend, l’API EventSource est utilisée pour se connecter à l’endpoint SSE /analytics et recevoir automatiquement les mises à jour en temps réel.
 
 <img src="images/tempreelfront.png" alt="analyticsKafkaFront" width="600"/>
