@@ -4,7 +4,7 @@
 Pour déployer rapidement un environnement Kafka local, ce projet s’appuie sur Docker et Docker Compose.
 L’utilisation des images officielles Confluent Kafka permet de lancer Kafka et Zookeeper de manière fiable et reproductible.
 
-<img src="images/docker-kafka.png" alt="docker-kafka" width="600"/>
+<img src="images/kafka-docker.png" alt="docker-kafka" width="600"/>
 
 Le fichier docker-compose.yml ci-dessous permet de démarrer un broker Kafka ainsi que Zookeeper :
 
